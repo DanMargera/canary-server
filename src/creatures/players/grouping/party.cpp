@@ -380,6 +380,7 @@ bool Party::canUseSharedExperience(const Player* player) const
 	if (memberList.empty()) {
 		return false;
 	}
+    return true;
 
 	uint32_t highestLevel = leader->getLevel();
 	for (Player* member : memberList) {
